@@ -14,15 +14,15 @@ class MenuActivity : AppCompatActivity() {
 
         }
 
-        val btnTeachers = findViewById<Button>(R.id.btn_teachers)
+        val btnTeachers = findViewById<Button>(R.id.btn_case)
         val btnLessons = findViewById<Button>(R.id.btn_lessons)
 
         btnTeachers.setOnClickListener {
-            startActivity(Intent(this, AddedСaseActivity::class.java))
+            startActivity(Intent(this,CaseActivity::class.java))
         }
 
         btnLessons.setOnClickListener {
-            startActivity(Intent(this, LessonActivity::class.java))
+            startActivity(Intent(this, DescActivity::class.java))
         }
 
         findViewById<Button>(R.id.btn_logout).setOnClickListener {
