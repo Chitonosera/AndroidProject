@@ -39,15 +39,15 @@ class CaseActivity : AppCompatActivity() {
         builder.setView(view)
 
         val CaseName = view.findViewById<EditText>(R.id.tvCaseName)
-        val Subject = view.findViewById<EditText>(R.id.tvSubject)
+        val ShortDesc = view.findViewById<EditText>(R.id.tvSubject)
 
 
         builder.setPositiveButton("Додати") { dialog, _ ->
             val CaseName = CaseName.text.toString()
-            val Subject = Subject.text.toString()
+            val ShortDesc = ShortDesc.text.toString()
 
-            if (CaseName.isNotEmpty() && Subject.isNotEmpty()) {
-                val newCase = Case(CaseName, Subject)
+            if (CaseName.isNotEmpty() && ShortDesc.isNotEmpty()) {
+                val newCase = Case(CaseName, ShortDesc)
                 adapter.addItem(newCase)
             } else {
                 Toast.makeText(this, "Будь ласка, заповніть всі поля", Toast.LENGTH_SHORT).show()
@@ -60,13 +60,14 @@ class CaseActivity : AppCompatActivity() {
             dialog.dismiss()
         }
 
-        builder.create().show()}}
-private fun getCase(): MutableList<Case> {
-    return mutableListOf(
-        Case("John Doe", "Math"),
-        Case("Jane Smith", "English"),
-        Case("Michael Johnson", "Physics")
-    )
+        builder.create().show()
+    }
+
+    private fun getCase(): MutableList<Case> {
+        return mutableListOf(
+            Case("John Doe", "Math"),
+            Case("Jane Smith", "English"),
+            Case("Michael Johnson", "Physics")
+        )
+    }
 }
-
-

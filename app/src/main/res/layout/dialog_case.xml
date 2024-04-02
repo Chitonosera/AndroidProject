@@ -9,13 +9,13 @@
         android:id="@+id/tvCaseName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ім`я та Прізвище"/>
+        android:hint="Назва справи"/>
 
     <EditText
         android:id="@+id/tvSubject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Предмет"/>
+        android:hint="Короткий опис"/>
 
 
 
