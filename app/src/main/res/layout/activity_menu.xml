@@ -32,11 +32,11 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/btn_lessons"
+        android:id="@+id/btn_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Lessons"
+        android:text="Desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

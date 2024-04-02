@@ -1,4 +1,6 @@
 package com.example.advocate
 
-class Desc {
-}
+class Desc (
+    val name: String,
+    val shortDesc: String
+)

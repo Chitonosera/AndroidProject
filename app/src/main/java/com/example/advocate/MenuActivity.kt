@@ -11,17 +11,17 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         findViewById<Button>(R.id.btn_logout).setOnClickListener {
-
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
         val btnTeachers = findViewById<Button>(R.id.btn_case)
-        val btnLessons = findViewById<Button>(R.id.btn_lessons)
+        val btnDesc = findViewById<Button>(R.id.btn_desc)
 
         btnTeachers.setOnClickListener {
             startActivity(Intent(this,CaseActivity::class.java))
         }
 
-        btnLessons.setOnClickListener {
+        btnDesc.setOnClickListener {
             startActivity(Intent(this, DescActivity::class.java))
         }
 
