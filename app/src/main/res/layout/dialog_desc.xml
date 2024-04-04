@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvDescName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Desc Name"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvShortDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Short Desc"
-        android:textSize="16sp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvDescName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description Name"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
 
+        <TextView
+            android:id="@+id/tvShortDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Description"
+            android:layout_below="@id/tvDescName"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>
