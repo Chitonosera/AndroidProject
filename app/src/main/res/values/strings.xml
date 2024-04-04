@@ -2,4 +2,7 @@
     <string name="app_name">Advocate</string>
     <string name="pass_error">wrong password</string>
     <string name="log_pass_error">wrong password</string>
+    <string name="fill_fields">Please fill in all fields</string>
+    <string name="profile_updated">Profile updated</string>
+
 </resources>
